@@ -20,10 +20,10 @@ def config(section, filename='cfg.ini'):
     return db
 
 def database_config():
-    return config('cfg.ini', 'postgresql')
+    return config('postgresql', 'cfg.ini')
 
 def discord_config():
-    return config('cfg.ini', 'discord')
+    return config('discord', 'cfg.ini')
 
 def general_config():
-    return config('cfg.ini', 'general')
+    return config('general', 'cfg.ini')
